@@ -30,7 +30,7 @@ Delete: O(n)
 int lo = 0, hi = a.length - 1;
 
 while (lo <= hi) {
-	int mid = (lo + hi) >>> 1;
+	int mid = lo + ((hi - lo) / 2);
 	if (a[mid] == key) {
 		return mid;
 	}
