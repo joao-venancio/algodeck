@@ -71,7 +71,7 @@ int findElementRotatedArray(int[] a, int val) {
 	if (val >= a[0] && val <= a[pivot - 1]) {
 		// Element is before the pivot
 		return binarySearch(a, val, 0, pivot - 1);
-	} else if (val >= a[pivot] && val < a.length - 1) {
+	} else if (val >= a[pivot] && val < a[a.length - 1]) {
 		// Element is after the pivot
 		return binarySearch(a, val, pivot, a.length - 1);
 	}
